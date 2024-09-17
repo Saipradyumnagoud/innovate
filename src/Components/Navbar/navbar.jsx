@@ -7,7 +7,8 @@ export class Navbar extends Component {
     return (
       <nav className="navbar">
         <div className="navbar-logo">
-          <span>Innovate</span>
+        <h3><span style={{ color: 'blue'}}>i</span></h3>
+          <span>nnovate</span>
         </div>
         <ul className="navbar-menu">
           <li className="navbar-item">

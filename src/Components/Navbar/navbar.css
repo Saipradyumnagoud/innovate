@@ -8,6 +8,7 @@
   background: white;
   color: black;
   font-family: 'Roboto', sans-serif; /* Apply Roboto font */
+  height: 60px;
 }
 
 .navbar-logo {
