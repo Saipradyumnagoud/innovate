@@ -1,6 +1,6 @@
 import React from 'react';
 import './home.css';
-
+import test1 from './image.png'
 const Home = () => {
   return (
     <div className="home">
@@ -53,7 +53,7 @@ const Home = () => {
           <div className="flip-card">
             <div className="flip-card-inner">
               <div className="flip-card-front">
-                <img src="../../../public/images/image.png" alt="Avatar" style={{ width: '300px', height: '300px' }} />
+                <img src="{test1}" alt="Avatar"  />
               </div>
               <div className="flip-card-back">
                 <h1>John Doe</h1>
