@@ -1,6 +1,7 @@
 import React from 'react';
 import './home.css';
 import test1 from './image.png'
+import test2 from './image2.jpg'
 const Home = () => {
   return (
     <div className="home">
@@ -53,7 +54,7 @@ const Home = () => {
           <div className="flip-card">
             <div className="flip-card-inner">
               <div className="flip-card-front">
-                <img src="{test1}" alt="Avatar"  />
+                <img src={test1} alt="Avatar"  />
               </div>
               <div className="flip-card-back">
                 <h1>John Doe</h1>
@@ -66,7 +67,7 @@ const Home = () => {
           <div className="flip-card">
             <div className="flip-card-inner">
               <div className="flip-card-front">
-                <img src="./image.png" alt="Avatar" style={{ width: '300px', height: '300px' }} />
+              <img src={test2} alt="Avatar"  />
               </div>
               <div className="flip-card-back">
                 <h1>John Smith</h1>
@@ -78,7 +79,7 @@ const Home = () => {
           <div className="flip-card">
             <div className="flip-card-inner">
               <div className="flip-card-front">
-                <img src="./image.png" alt="Avatar" style={{ width: '300px', height: '300px' }} />
+              <img src={test1} alt="Avatar"  />
               </div>
               <div className="flip-card-back">
                 <h1>Johnson</h1>
