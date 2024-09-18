@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'; 
 import './home.css';
 import test1 from './image.png'
 import test2 from './image2.jpg'
@@ -12,7 +13,9 @@ const Home = () => {
           <p className="hero-description">
             Let us craft modern, beautiful, and fully functional websites and Apps that help bring your ideas to life.
           </p>
-          <button className="cta-button">Get Started</button>
+          <Link to="/Get-started">
+            <button className="cta-button">Get Started</button>
+          </Link>
         </div>
       </section>
 

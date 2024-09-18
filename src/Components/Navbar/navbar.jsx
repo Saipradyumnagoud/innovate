@@ -1,15 +1,22 @@
-import React, { Component } from 'react';
+import React from 'react'; // No need to import Component separately
 import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 import './navbar.css'; 
 
-export class Navbar extends Component {
+export class Navbar extends React.Component {
   render() {
     return (
       <nav className="navbar">
-        <div className="navbar-logo">
-        <h3><span style={{ color: 'blue'}}>i</span></h3>
-          <span>nnovate</span>
+        <div className="innovate">
+          <Link to="/">
+            <div className="navbar-logo">
+              <h3>
+                <span style={{ color: 'blue' }}>i</span>
+                <span  style={{ color: 'black' }}>nnovate</span>
+              </h3>
+            </div>
+          </Link>
         </div>
+
         <ul className="navbar-menu">
           <li className="navbar-item">
             <Link to="/">Home</Link> 
@@ -24,7 +31,10 @@ export class Navbar extends Component {
             <Link to="/life-at-innovate">Life at Innovate</Link>
           </li>
         </ul>
-        <button className="navbar-button">Get in Touch</button>
+
+        <Link to="/get-started">
+          <button className="navbar-button">Get in Touch</button>
+        </Link>
       </nav>
     );
   }
