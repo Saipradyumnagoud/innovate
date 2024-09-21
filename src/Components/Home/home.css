@@ -15,17 +15,15 @@ body {
 .hero {
   background: linear-gradient(to right, #0a0049, #000);
   color: white;
-  padding: 200px 20px;
+  padding: 100px 20px; /* Reduced padding for mobile */
 }
 
 .hero-title {
-  font-size: 3rem;
-  font-weight: bold;
+  font-size: 2.5rem; /* Adjusted for mobile */
 }
 
 .hero-description {
-  font-size: 1.2rem;
-  margin: 20px 0;
+  font-size: 1rem; /* Adjusted for mobile */
 }
 
 .cta-button {
@@ -47,28 +45,25 @@ body {
 .services {
   background-color: #f8f8f8;
   padding: 40px 20px;
-  margin: 40px auto;
+  margin: 40px auto; /* Reduced margin for mobile */
   border-radius: 15px;
   box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.2);
-  max-width: 1350px;
-  width: 100%;
+  max-width: 1350px; /* Use full width on mobile */
 }
 
 .section-title {
-  font-size: 2.5rem;
-  margin-bottom: 30px;
-  text-align: center;
+  font-size: 2rem; /* Adjusted for mobile */
 }
 
 .services-list {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  grid-template-columns: repeat(1, 1fr); /* Stacked layout for mobile */
+  gap: 50px; /* Reduced gap for mobile */
 }
 
 .service-item {
   background: rgb(212, 212, 212);
-  padding: 20px;
+  padding: 15px; /* Adjusted for mobile */
   border-radius: 10px;
   box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -78,43 +73,34 @@ body {
   transform: translateY(-10px);
   box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.3);
 }
-
 .service-item h3 {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
+  font-size: 1.2rem; /* Adjusted for mobile */
 }
 
 .service-item p {
-  font-size: 1rem;
+  font-size: 0.9rem; /* Adjusted for mobile */
 }
 
 /* Testimonials Section */
 .testimonials {
   background-color: #ffffff;
   padding: 40px 20px;
-  margin: 40px auto;
+  margin: 40px auto; /* Reduced margin for mobile */
   border-radius: 15px;
   box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.2);
-  max-width: 1350px;
-  width: 100%;
-}
-
-.section-title {
-  font-size: 2.5rem;
-  margin-bottom: 30px;
-  text-align: center;
+  max-width: 1350px /* Use full width on mobile */
 }
 
 .testimonials-list {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  grid-template-columns: repeat(1, 1fr); /* Stacked layout for mobile */
+  gap: 50px; /* Reduced gap for mobile */
 }
 
 .flip-card {
   background-color: transparent;
-  width: 300px;
-  height: 300px;
+  width: 100%; /* Full width on mobile */
+  height: 200px; /* Adjusted height for mobile */
   border: 1px solid #f1f1f1;
   perspective: 1000px; /* Ensure 3D effect */
 }
@@ -139,7 +125,6 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-  -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
 }
 
@@ -160,4 +145,34 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover; /* Ensure image covers the container without distortion */
+}
+
+/* Media Queries for Mobile Devices */
+@media (min-width: 768px) {
+  .hero {
+    padding: 200px 20px; /* Original padding for larger screens */
+  }
+
+  .hero-title {
+    font-size: 3rem; /* Original font size */
+  }
+
+  .hero-description {
+    font-size: 1.2rem; /* Original font size */
+  }
+
+  .services-list {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns on larger screens */
+  }
+
+  .testimonials-list {
+    
+    grid-template-columns: repeat(3, 1fr); /* 3 columns on larger screens */
+    gap: 50px
+  }
+
+  .flip-card {
+    width: 300px; /* Original width for larger screens */
+    height: 300px; /* Original height */
+  }
 }
