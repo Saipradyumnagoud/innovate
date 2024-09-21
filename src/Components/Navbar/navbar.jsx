@@ -1,43 +1,77 @@
-import React from 'react'; // No need to import Component separately
-import { Link } from 'react-router-dom'; // Import Link from react-router-dom
-import './navbar.css'; 
+import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+import './navbar.css';
 
-export class Navbar extends React.Component {
-  render() {
-    return (
-      <nav className="navbar">
-        <div className="innovate">
-          <Link to="/">
-            <div className="navbar-logo">
-              <h3>
-                <span style={{ color: 'blue' }}>i</span>
-                <span  style={{ color: 'black' }}>nnovate</span>
-              </h3>
-            </div>
-          </Link>
-        </div>
+export const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
 
-        <ul className="navbar-menu">
-          <li className="navbar-item">
-            <Link to="/">Home</Link> 
-          </li>
-          <li className="navbar-item">
-            <Link to="/who-are-we">Who Are We</Link> 
-          </li>
-          <li className="navbar-item">
-            <Link to="/what-we-do">What We Do</Link>
-          </li>
-          <li className="navbar-item">
-            <Link to="/life-at-innovate">Life at Innovate</Link>
-          </li>
-        </ul>
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
 
-        <Link to="/get-started">
-          <button className="navbar-button">Get in Touch</button>
+  // Add/Remove class to body to restrict scrolling
+  useEffect(() => {
+    if (isOpen) {
+      document.body.classList.add('no-scroll');
+    } else {
+      document.body.classList.remove('no-scroll');
+    }
+  }, [isOpen]);
+
+  // Close the menu when clicking outside
+  useEffect(() => {
+    const closeMenuOnClickOutside = (e) => {
+      if (!e.target.closest('.navbar')) {
+        setIsOpen(false);
+      }
+    };
+    if (isOpen) {
+      document.addEventListener('click', closeMenuOnClickOutside);
+    }
+    return () => {
+      document.removeEventListener('click', closeMenuOnClickOutside);
+    };
+  }, [isOpen]);
+
+  return (
+    <nav className="navbar">
+      <div className="innovate">
+        <Link to="/" onClick={() => setIsOpen(false)}>
+          <div className="navbar-logo">
+            <h3>
+              <span style={{ color: 'blue' }}>i</span>
+              <span style={{ color: 'black' }}>nnovate</span>
+            </h3>
+          </div>
         </Link>
-      </nav>
-    );
-  }
-}
+      </div>
+
+      <ul className={`navbar-menu ${isOpen ? 'open' : ''}`}>
+        <li className="navbar-item">
+          <Link to="/" onClick={toggleMenu}>Home</Link>
+        </li>
+        <li className="navbar-item">
+          <Link to="/who-are-we" onClick={toggleMenu}>Who Are We</Link>
+        </li>
+        <li className="navbar-item">
+          <Link to="/what-we-do" onClick={toggleMenu}>What We Do</Link>
+        </li>
+        <li className="navbar-item">
+          <Link to="/life-at-innovate" onClick={toggleMenu}>Life at Innovate</Link>
+        </li>
+      </ul>
+
+      <Link to="/get-started" className="navbar-button-link">
+        <button className="navbar-button">Get in Touch</button>
+      </Link>
+
+      <div className={`hamburger ${isOpen ? 'active' : ''}`} onClick={toggleMenu} aria-label="Toggle menu">
+        <span className="bar"></span>
+        <span className="bar"></span>
+        <span className="bar"></span>
+      </div>
+    </nav>
+  );
+};
 
 export default Navbar;
