@@ -39,8 +39,8 @@ export const Navbar = () => {
         <Link to="/" onClick={() => setIsOpen(false)}>
           <div className="navbar-logo">
             <h3>
-              <span style={{ color: 'blue' }}>N</span>
-              <span style={{ color: 'black' }}>imble</span>
+              <span style={{ color: 'blue' }}>I</span>
+              <span style={{ color: 'black' }}>nnovate Flow</span>
             </h3>
           </div>
         </Link>
@@ -57,7 +57,7 @@ export const Navbar = () => {
           <Link to="/what-we-do" onClick={toggleMenu}>What We Do</Link>
         </li>
         <li className="navbar-item">
-          <Link to="/life-at-innovate" onClick={toggleMenu}>Life at Nimble</Link>
+          <Link to="/life-at-innovate" onClick={toggleMenu}>Life at Innovate Flow</Link>
         </li>
       </ul>
 
