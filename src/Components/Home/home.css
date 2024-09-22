@@ -1,4 +1,4 @@
-/* General Styles */
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -6,24 +6,22 @@ body {
   box-sizing: border-box;
 }
 
-/* Home Page Styling */
 .home {
   text-align: center;
 }
 
-/* Hero Section */
 .hero {
   background: linear-gradient(to right, #0a0049, #000);
   color: white;
-  padding: 100px 20px; /* Reduced padding for mobile */
+  padding: 100px 20px;
 }
 
 .hero-title {
-  font-size: 2.5rem; /* Adjusted for mobile */
+  font-size: 2.5rem; 
 }
 
 .hero-description {
-  font-size: 1rem; /* Adjusted for mobile */
+  font-size: 1rem; 
 }
 
 .cta-button {
@@ -41,14 +39,13 @@ body {
   background-color: #34a294;
 }
 
-/* Services Section */
 .services {
   background-color: #f8f8f8;
   padding: 40px 20px;
-  margin: 40px auto; /* Reduced margin for mobile */
+  margin: 40px auto; 
   border-radius: 15px;
   box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.2);
-  max-width: 1350px; /* Use full width on mobile */
+  max-width: 1350px; 
 }
 
 .section-title {
@@ -162,7 +159,7 @@ body {
   }
 
   .services-list {
-    grid-template-columns: repeat(3, 1fr); /* 3 columns on larger screens */
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .testimonials-list {
