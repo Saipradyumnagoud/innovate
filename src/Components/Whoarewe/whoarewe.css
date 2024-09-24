@@ -119,3 +119,32 @@ body {
   max-width: 800px;
   margin: 0 auto;
 }
+@media (max-width: 768px) {
+  .achievements {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .achievement {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  .leadership-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .leadership-card {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .intro-description {
+    font-size: 1rem;
+  }
+}
