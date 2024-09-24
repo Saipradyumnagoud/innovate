@@ -10,6 +10,7 @@
   font-family: 'Roboto', sans-serif;
   height: 60px;
   position: relative;
+  text-decoration: none;
 }
 
 .navbar-logo {
@@ -18,7 +19,13 @@
   font-size: 1.5rem;
   font-weight: 500;
 }
+.innovate a {
+  text-decoration: none;
+}
 
+.innovate a:hover {
+  text-decoration: none; /* Ensure no underline on hover */
+}
 .navbar-menu {
   display: flex;
   list-style: none;
@@ -117,6 +124,3 @@
   overflow: hidden;
 }
 
-.innovate a{
-  text-decoration: none;
-}

@@ -38,7 +38,7 @@ export const Navbar = () => {
       <div className="innovate">
         <Link to="/" onClick={() => setIsOpen(false)}>
           <div className="navbar-logo">
-            <h3>
+            <h3 className='innovate-text'>
               <span style={{ color: 'blue' }}>I</span>
               <span style={{ color: 'black' }}>nnovate Flow</span>
             </h3>
