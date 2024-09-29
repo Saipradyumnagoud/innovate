@@ -23,7 +23,16 @@ const Footer = () => {
           </li>
         </ul>
       </div>
-
+      {/*Compaany Section*/}
+      <div className="footer-section">
+        <h3 className="footer-title">Company</h3>
+        <ul className="footer-links">
+        <li >
+            <Link to="https://4z5014t157e.typeform.com/to/CXLp74kx">Carrers</Link> 
+          </li>
+          
+        </ul>
+      </div>
       {/* Contact Section */}
       <div className="footer-section">
         <h3 className="footer-title">Contact Us</h3>
