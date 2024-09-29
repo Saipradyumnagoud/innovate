@@ -57,7 +57,7 @@ export const Navbar = () => {
           <Link to="/what-we-do" onClick={toggleMenu}>What We Do</Link>
         </li>
         <li className="navbar-item">
-          <Link to="/life-at-innovate" onClick={toggleMenu}>Life at Innovate Flow</Link>
+          <Link to="/life-at-innovate" onClick={toggleMenu}>Life at Nine</Link>
         </li>
       </ul>
 

@@ -19,7 +19,7 @@ const Footer = () => {
             <Link to="/what-we-do">What We Do</Link>
           </li>
           <li >
-            <Link to="/life-at-innovate">Life at Innovate</Link>
+            <Link to="/life-at-innovate">Life at Nine</Link>
           </li>
         </ul>
       </div>
@@ -36,7 +36,8 @@ const Footer = () => {
       {/* Contact Section */}
       <div className="footer-section">
         <h3 className="footer-title">Contact Us</h3>
-        <p className="footer-contact">Email: infoatinnovate@gmail.com</p>
+        {/* <p className="footer-contact">infoatinnovate@gmail.com</p> */}
+        <p className="footer-contact">Carrersatnine@gmail.com</p>
         <p className="footer-contact">Phone: +123 456 7890</p>
         <p className="footer-contact">Address: 123 Main Street, City, Country</p>
       </div>
