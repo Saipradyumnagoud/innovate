@@ -8,7 +8,7 @@ const GetStarted = () => {
         <h1>Let us build a project together</h1>
       </div>
       <div className="started-right">
-        <form className="started-form" action="https://formsubmit.co/Carrersatnine@gmail.com" method="POST">
+        <form className="started-form" action="https://formsubmit.co/careersatnine@gmail.com" method="POST">
           <label>
             Name:
             <input
