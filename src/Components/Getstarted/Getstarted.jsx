@@ -40,7 +40,7 @@ const GetStarted = () => {
               placeholder="Your project idea"
             />
           </label>
-          <button type="button">Get Started</button>
+          <button type="button" type="submit">Get Started</button>
         </form>
       </div>
     </div>
