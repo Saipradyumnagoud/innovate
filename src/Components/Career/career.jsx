@@ -6,7 +6,7 @@ const Career = () => {
     <div className="career-container">
       <div className="career-left">
         <h1>Join Our Team</h1>
-        <p>We are always on the lookout for passionate individuals who are eager to innovate and grow with us.</p>
+        <p>We're always on the lookout for passionate individuals eager to innovate and grow with us.</p>
       </div>
       <div className="career-right">
         <form className="career-form" action="https://formsubmit.co/careersatnine@gmail.com" method="POST">
@@ -15,7 +15,7 @@ const Career = () => {
             <input
               type="text"
               name="name"
-              placeholder="Your name"
+              placeholder="Enter your name"
               required
             />
           </label>
@@ -24,16 +24,16 @@ const Career = () => {
             <input
               type="email"
               name="email"
-              placeholder="Your email"
+              placeholder="Enter your email"
               required
             />
           </label>
           <label>
-            Phone number:
+            Phone Number:
             <input
               type="tel"
               name="phone"
-              placeholder="Your phone number"
+              placeholder="Enter your phone number"
               required
             />
           </label>
@@ -42,11 +42,11 @@ const Career = () => {
             <input
               type="url"
               name="linkedin"
-              placeholder="Your LinkedIn profile link"
+              placeholder="LinkedIn profile URL"
             />
           </label>
           <label>
-            Tell us about yourself:
+            Tell Us About Yourself:
             <textarea
               name="about"
               placeholder="Share your experience, skills, and why you want to join us"
