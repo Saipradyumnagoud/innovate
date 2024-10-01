@@ -17,23 +17,23 @@ const WhoAreWe = () => {
         {/* Achievements Section */}
         <section className="achievements">
           <div className="achievement">
-            <h2>8Y</h2>
+            <h2>XY</h2>
             <p>In Business</p>
           </div>
           <div className="achievement">
-            <h2>25+</h2>
+            <h2>XY+</h2>
             <p>Products</p>
           </div>
           <div className="achievement">
-            <h2>20</h2>
+            <h2>XY</h2>
             <p>Clients</p>
           </div>
           <div className="achievement">
-            <h2>105+</h2>
+            <h2>XYZ+</h2>
             <p>Experts</p>
           </div>
           <div className="achievement">
-            <h2>400M</h2>
+            <h2>XYZM</h2>
             <p>Market Value</p>
           </div>
         </section>
