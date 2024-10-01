@@ -8,6 +8,7 @@ import WhatWeDo from './Components/Whatwedo/whatwedo.jsx';
 import LifeAtInnovate from './Components/LifeAtInnovate/lifeatinnovate.jsx';
 import Footer from './Components/Footer/Footer.jsx';
 import Started from './Components/Getstarted/Getstarted.jsx';
+import Career from './Components/Career/career.jsx'
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
       </Routes>
       <Routes>
       <Route path="/get-started" element={<Started/>}/>
+      <Route path="/career" element={<Career/>}/>
       </Routes>
       <Footer />
     </Router>

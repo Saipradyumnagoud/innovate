@@ -28,7 +28,7 @@ const Footer = () => {
         <h3 className="footer-title">Company</h3>
         <ul className="footer-links">
         <li >
-            <Link to="https://4z5014t157e.typeform.com/to/CXLp74kx">Carrers</Link> 
+            <Link to="/Career">Careers</Link> 
           </li>
           
         </ul>

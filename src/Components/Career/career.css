@@ -1,0 +1,66 @@
+.career-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: #f4f4f4;
+  }
+  
+  .career-left {
+    flex: 1;
+    margin-right: 50px;
+  }
+  
+  .career-left h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .career-left p {
+    font-size: 18px;
+    color: #666;
+  }
+  
+  .career-right {
+    flex: 1;
+  }
+  
+  .career-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .career-form label {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .career-form input, .career-form textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .career-form textarea {
+    resize: none;
+    height: 150px;
+  }
+  
+  .career-form button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .career-form button:hover {
+    background-color: #0056b3;
+  }
+  
