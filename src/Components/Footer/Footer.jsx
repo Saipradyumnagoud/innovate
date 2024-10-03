@@ -5,7 +5,6 @@ import './footer.css';
 const Footer = () => {
   return (
     <footer className="footer-container">
-      {/* Site Map Section */}
       <div className="footer-section">
         <h3 className="footer-title">Site Map</h3>
         <ul className="footer-links">
