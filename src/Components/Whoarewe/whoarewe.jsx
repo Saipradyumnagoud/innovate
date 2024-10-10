@@ -15,7 +15,7 @@ const WhoAreWe = () => {
         </section>
 
         {/* Achievements Section */}
-        <section className="achievements">
+        {/* <section className="achievements">
           <div className="achievement">
             <h2>XY</h2>
             <p>In Business</p>
@@ -36,7 +36,7 @@ const WhoAreWe = () => {
             <h2>XYZM</h2>
             <p>Market Value</p>
           </div>
-        </section>
+        </section> */}
 
         {/* Founder and Director Section */}
         <section className="leadership">
