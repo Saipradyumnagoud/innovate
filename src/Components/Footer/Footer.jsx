@@ -4,7 +4,8 @@ import './footer.css';
 
 const Footer = () => {
   return (
-    <footer className="footer-container">
+    <footer >
+      <div className="footer-container">
       <div className="footer-section">
         <h3 className="footer-title">Site Map</h3>
         <ul className="footer-links">
@@ -54,7 +55,12 @@ const Footer = () => {
           <button className="footer-button">Subscribe</button>
         </div>
       </div>
-    </footer>
+      </div>
+      <div className="footer-copyright">
+        <p>This WebSite is still Under Development</p>
+      </div>
+      </footer>
+      
   );
 };
 
